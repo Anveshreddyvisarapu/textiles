@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Denied</title>
+    <style>
+        .logo{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo img{
+            height: 100px;
+            width: 300px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        
+        <img src="https://www.uga.edu/img/GEORGIA-FS-FC.7d04edb7.png" alt="uga logo">
+
+
+    </div>
+    <br><br> <!-- Adds two blank lines -->
+    <h2>Access Denied</h2>
+    <p>You need to accept the terms and conditions to proceed.</p>
+    <form action="{{ url_for('user_agreement') }}" method="GET">
+        <button type="submit">Go Back</button>
+    </form>
+</body>
+</html>
